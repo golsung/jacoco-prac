@@ -39,10 +39,7 @@ jacocoTestCoverageVerification {
                 counter = 'LINE'
                 value = 'COVEREDRATIO'
                 minimum = 0.90
-
             }
-            excludes = ['*.SeleniumProjApplication', '*.IndexController', '*.CalculatorController']
-
         }
     }
 }
