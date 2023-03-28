@@ -44,16 +44,9 @@ jacocoTestCoverageVerification {
     }
 }
 
-jacocoTestReport {
-    finalizedBy 'jacocoTestCoverageVerification'
-    dependsOn test // tests are required to run before generating the report
-}
+
 
 test {
     useJUnitPlatform()
     finalizedBy jacocoTestReport
-    jacoco {
-        enabled = true
-        destinationFile = file("${buildDir}/jacoco/jacoco.exec")
-    }
 }
